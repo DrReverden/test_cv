@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+}
+
+body {
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 400;
+   font-size: 14px;
+   color: #5d7b6f;
+}
+
+h1, h2, h3, h4, h5, h6 {
+   padding: 0;
+   margin: 0;
+}
+
+ul {
+   list-style-type: none;
+   padding: 0;
+}
+
+a {
+   text-decoration: none;
+   color: var(--contact-color);
+}
+
+.container {
+   max-width: 1180px;
+   margin: 0 auto;
+}
+
+:root {
+   --accent-color: #a4c3a2;
+   --white-color: #f3f2ea;
+   --contact-color: #5d7b6f;
+}
+
+/*Header 
+=============================*/
+
+.header {
+   background-color: var(--accent-color);
+   color: var(--white-color);
+   text-align: center;
+}
+
+.header__title {
+   padding: 20px 0;
+}
+
+.header__subtitle {
+   padding-bottom: 20px;
+}
+
+/*Section
+=====================*/
+
+.section__inner {
+   display: flex;
+   
+}
+
+.section__left {
+   width: 30%;
+   justify-content: left;
+   /* background-color: var(--contact-color); */
+}
+
+.section__title {
+   margin: 20px 0;
+   line-height: 2;
+   border-bottom: 1px solid var(--accent-color);
+}
+
+.contacts__img {
+   width: 300px;
+   border: 5px solid var(--contact-color);
+   border-radius: 50%;
+   margin: 40px 0;
+
+}
+
+.section__item {
+   margin-bottom: 10px;
+}
+
+.section__item:last-child {
+   margin-bottom: 40px;
+}
+
+.fab {
+   /* margin-right: 15px; */
+   font-size: 18px;
+   margin-right: 15px;
+}
+
+.education__item {
+   margin-bottom: 10px;
+}
+
+.skills__item {
+   margin-bottom: 10px;
+}
+
+.section__about {
+   width: 70%;
+   background-color: var(--white-color);
+}
+
+.item__title {
+   margin: 20px;
+   font-size: 18px;
+   position: relative;
+}
+
+.item__title:before {
+   content: '';
+   position: absolute;
+   top: 7px;
+   left: -14px;
+   height: 8px;
+   width: 8px;
+   background-color: #5d7b6f;
+   border-radius: 50%;
+}
+
+.item__text, .section__link {
+   font-size: 16px;
+   margin: 0 20px 10px;
+}
+
+.item__text-code {
+   margin: 20px;
+   background-color: rgb(252, 248, 240);
+   width: 650px;
+}
+
+.section__link {
+   display: block;
+   margin-bottom: 15px;
+   transition: all .1s;
+}
+
+.section__link:hover {
+   text-decoration: underline;
+   font-weight: 700;
+   color: #333;
+}

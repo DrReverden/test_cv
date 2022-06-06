@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="https://kit.fontawesome.com/73f0f144f7.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="css/style.css">
+   <title>Curriculum Vitae - Anna Sinichkina</title>
+</head>
+<body>
+   <header class="header">
+      <div class="container">
+         <h1 class="header__title">Sinichkina Anna Alexandrovna</h1>
+         <h3 class="header__subtitle">Junior Frontend Developer</h3>
+      </div>
+   </header>
+
+   <section class="section">
+      <div class="container">
+         <div class="section__inner">
+            <div class="section__left">
+
+               <div class="section__contacts">
+                  <img src="myphoto2.jpg" alt="" class="contacts__img">
+                  <h3 class="section__title">Contacts</h3>
+                  <ul class="contacts__list">
+                     <li class="section__item">
+                        <i class="fab fa-solid fa-phone"></i>
+                        8 (915) 055-88-80
+                     </li>                
+                     <li class="section__item">
+                        <i class="fab fa-solid fa-at"></i>
+                        lamafon@mail.ru
+                     </li>
+                     <li class="section__item">
+                        <i class="fab fa-brands fa-discord"></i>
+                        DrReverden
+                     </li>
+                  </ul>
+               </div>
+               <!-- contacts -->
+
+               <div class="section__education">
+                  <h3 class="section__title">Education</h3>
+                  <ul class="education__list">
+                     <li class="section__item">Web Design School by Nickita Bruskov</li>
+                     <li class="section__item">Web Design School "WayUp"</li>
+                     <li class="section__item">Stepick Course, Python for beginners by JetBrains School</li>
+                     <li class="section__item">Stepick Course, Web development for beginners</li>
+                  </ul>
+               </div>
+
+               <!-- education -->
+
+               <div class="section__skills">
+                  <h3 class="section__title">Skills</h3>
+                  <ul class="skills__list">
+                     <li class="section__item">HTML</li>
+                     <li class="section__item">CSS</li>
+                     <li class="section__item">FIGMA</li>
+                     <li class="section__item">WordPress</li>
+                     <li class="section__item">Photoshop</li>
+                     <li class="section__item">Python</li>
+                     <li class="section__item">GIT</li>
+                  </ul>
+               </div>
+               
+            </div>
+            <div class="section__about">
+               <div class="section__item">
+                  <h3 class="item__title">Profile</h3>
+                  <p class="item__text">Interested in exploring a new sphere of activity. I'm not afraid to take on difficult tasks. I dream of developing in a new profession and I want to improve my coding skills. </p>
+               </div>
+               <div class="section__item">
+                  <h3 class="item__title">Education</h3>
+                  <p class="item__text">I know the basics of web design. I know how to work in Figma and Photoshop. I know the basics of HTML, CSS, Python. I work in such programs as BC Code, Sublime Text. I am currently learning Javascript.</p>
+               </div>
+               <div class="section__item">
+                  <h3 class="item__title">Code Example</h3>
+                  <a href="https://github.com/DrReverden/rsschool-cv.git" class="section__link" target="_blank">RS school task (link)</a>
+                  <a href="https://github.com/DrReverden/xiaomi_bike.git" class="section__link" target="_blank">Online workshop (link)</a>
+                  <p class="item__text">
+                     Task from Stepick Course: The input to the program is a number n, and then n lines containing integers in ascending order. The program merges lists of numbers into one sorted list.
+                  <pre class="item__text-code">
+
+            def quick_merge(list1, list2):
+               result = []
+
+               p1 = 0
+               p2 = 0
+               while p1 < len(list) and p2 < len(list2):
+                  if list1[p1] <= list2[p2]:
+                     result.append(list1[p1])
+                     p1 += 1
+                  else:
+                     result.append(list2[p2])
+                     p2 += 2
+               if p1 < len(list1):
+                  result += list1[p1:]
+               if p2 < len(list2):
+                  result += list2[p2:] 
+               return result
+
+            total_list = []
+
+            for i in range(int(input())):
+               num = [int(q) for q in input().split()]
+               total_list = quick+merge(total_list, num)
+            print(*total_list)
+
+                  </pre>
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+</body>
+</html>
